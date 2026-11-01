@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "node generate_sitemap.js && node generate_video_sitemap.js",
+    "deploy": "wrangler deploy",
     "start": "node server.js"
   },
   "dependencies": {
