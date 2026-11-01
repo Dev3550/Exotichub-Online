@@ -40,3 +40,4 @@ export default {
     return env.ASSETS ? env.ASSETS.fetch(request) : fetch(request);
   }
 };
+
