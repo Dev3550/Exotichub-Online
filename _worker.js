@@ -7,6 +7,17 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    // Direct Verification File 200 OK
+    if (url.pathname === '/567d2d414e8cb55011158f9acf823219.html' || url.pathname === '/567d2d414e8cb55011158f9acf823219') {
+      return new Response('567d2d414e8cb55011158f9acf823219', {
+        status: 200,
+        headers: {
+          'Content-Type': 'text/html; charset=utf-8',
+          'Cache-Control': 'public, max-age=86400'
+        }
+      });
+    }
+
     // 1. API route: /api/refresh-stream
     if (url.pathname === '/api/refresh-stream') {
       const context = {
