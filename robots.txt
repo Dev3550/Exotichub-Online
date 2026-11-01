@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+Disallow: /admin-dashboard.html
+Disallow: /scratch/
+Disallow: /server.js
+Disallow: /package.json
+Disallow: /wrangler.toml
+
+# Google Crawlers & Search Favicon Indexer
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Favicons
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing & MSN Bots
+User-agent: Bingbot
+Allow: /
+User-agent: msnbot
+Allow: /
+User-agent: msnbot-media
+Allow: /
+User-agent: adidxbot
+Allow: /
+
+# Yandex (Russia & Eastern Europe)
+User-agent: Yandex
+Allow: /
+User-agent: YandexBot
+Allow: /
+User-agent: YandexVideo
+Allow: /
+
+# Sitemaps for Search Engines
+Sitemap: https://exotichub.online/sitemap.xml
+Sitemap: https://exotichub.online/video-sitemap.xml

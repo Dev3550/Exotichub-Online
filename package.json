@@ -1,0 +1,14 @@
+{
+  "name": "exotichub-online",
+  "version": "1.0.0",
+  "description": "ExoticHub High-Performance Video Tube & HLS Streaming Platform",
+  "main": "server.js",
+  "scripts": {
+    "build": "node generate_sitemap.js && node generate_video_sitemap.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
